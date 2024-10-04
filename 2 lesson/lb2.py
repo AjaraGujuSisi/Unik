@@ -1,0 +1,6 @@
+a = input("Введите строку: ")
+b= input("Введите символ для выделения: ")
+words = a.split()
+short= min(words, key=len)
+long = a.replace(short, f"{b}{short}{b}")
+print("Результат:", long)
